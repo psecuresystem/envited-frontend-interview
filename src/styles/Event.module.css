@@ -1,0 +1,96 @@
+.container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 100px;
+  overflow: hidden;
+}
+
+.image {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.eventTitle {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 55px;
+  display: flex;
+  align-items: center;
+
+  color: #240d57;
+  margin-bottom: 17px;
+}
+
+.eventPlatform {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #828282;
+}
+
+.startDate {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  /* identical to box height */
+
+  color: #240d57;
+  margin: 0;
+}
+
+.endDate {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+
+  color: #4f4f4f;
+}
+
+.eventDetail {
+  display: flex;
+  align-items: center;
+  width: min(450px, 95vw);
+}
+
+.nextArrow {
+  margin-left: auto;
+  color: #bdbdbd;
+}
+
+@media screen and (max-width: 995px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    justify-content: flex-end;
+  }
+  .image {
+    width: inherit;
+    object-fit: cover;
+  }
+  .eventTitle {
+    font-size: 36px;
+  }
+}
+
+.cancel {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  cursor: pointer;
+}

@@ -1,0 +1,141 @@
+.container {
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(0deg, #f6f2ff, #f6f2ff), #fbfaff;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 100px;
+  overflow: hidden;
+}
+
+.image {
+  width: 440px;
+  height: 775.69px;
+}
+
+.snapchat_text {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 700;
+  font-size: min(64px, 15vw);
+  /* or 100% */
+
+  text-align: right;
+
+  color: #240d57;
+  width: min(60%, 100vw);
+  margin-bottom: 16px;
+}
+
+.heading {
+  width: 574px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.snapchat {
+  background: linear-gradient(90deg, #8456ec 24.2%, #e87bf8 120.46%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.heading_description {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 300;
+  font-size: min(24px, 8vw);
+  line-height: 28px;
+  text-align: right;
+
+  color: #4f4f4f;
+
+  max-width: min(80%, 100vw);
+}
+
+.create_event_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  gap: 10px;
+
+  width: min(320px, 90vw);
+  height: 55px;
+
+  background: linear-gradient(90deg, #8456ec 3.25%, #e87bf8 100%);
+  border-radius: 10px;
+  border: none;
+
+  /* Text style */
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 700;
+  font-size: min(20px, 7vw);
+  line-height: 23px;
+  /* identical to box height */
+
+  text-align: right;
+
+  color: #ffffff;
+}
+
+.create_event_button_alt {
+  display: none;
+}
+
+@media screen and (max-width: 1140px) {
+  .container {
+    flex-direction: column-reverse;
+    height: fit-content;
+    align-items: center;
+  }
+
+  .heading {
+    align-items: center;
+  }
+
+  .snapchat_text,
+  .heading_description {
+    text-align: center;
+  }
+
+  .create_event_button {
+    display: none;
+  }
+
+  .create_event_button_alt {
+    display: block !important;
+    text-align: center;
+  }
+
+  .imgContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+
+  .image {
+    width: 311px;
+    height: 548.27px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .image {
+    width: 165.63px;
+    height: 292px;
+  }
+  .container {
+    height: 100vh;
+    padding: 0 27px;
+  }
+
+  .imgContainer {
+    margin-bottom: 0;
+  }
+}
